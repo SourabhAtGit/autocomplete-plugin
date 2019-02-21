@@ -10,4 +10,5 @@ function echoServer(inputText){
     return suggestions; 
 }
 
+
 console.log(echoServer('hello'));
