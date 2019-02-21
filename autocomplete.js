@@ -1,12 +1,13 @@
-console.log("sourah");
 function echoServer(inputText){
-    var suggestionArray = [];
-    for(var i = 0; i < 5; i++){
-        var suggestion = inputText;
-        for(var j = 0; j <= i; j++){
-            suggestion + ' ' + inputText;
+    var suggestion = inputText;
+    var suggestions = [];
+    for(var i = 0; i < 7; i++){
+        suggestions[i] = suggestion ;
+        for(var j =0; j<=i; j++){
+            suggestions[i] += ' ' + suggestion;
         }
-        suggestionArray.push(suggestion);
-    }
-    return suggestionArray;
+    } 
+    return suggestions; 
 }
+
+console.log(echoServer('hello'));
